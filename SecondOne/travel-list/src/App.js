@@ -1,4 +1,5 @@
 import "./index.css";
+import { useState } from "react";
 
 const initialItems = [
   { id: 1, description: " Passports", quantity: 2, packed: false },
@@ -22,27 +23,30 @@ function Logo() {
 }
 
 function Form() {
+  const [description, setDescription] = useState("");
+  const [num, setNum] = useState(1);
 
-
-
-  function handleSubmit(e){
-
-  e.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
   }
-
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
       <h3>What do you need for your 🤔 trip</h3>
 
-      <select>
+      <select value={num} onChange={(e) => setNum(e.target.value)}>
         {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
           <option value={num} key={num}>
             {num}
           </option>
         ))}
       </select>
-      <input type="text" placeholder="Item..." />
+      <input
+        type="text"
+        placeholder="Item..."
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+      />
       <button>Add</button>
     </form>
   );
