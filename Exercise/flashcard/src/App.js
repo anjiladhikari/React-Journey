@@ -47,7 +47,8 @@ function FlashCards() {
   const [selectedId, setSelectedId] = useState(null);
 
   function handleClick(id) {
-    setSelectedId(id !== selectedId ? id : null);
+    setSelectedId(id !== selectedId ? id : null); 
+    // if slected id is not equal then assign to new but if same assign null 
   }
 
   return (
