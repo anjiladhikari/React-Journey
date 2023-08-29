@@ -15,19 +15,29 @@ function Counter() {
   const date = new Date("june 21 2027");
   date.setDate(date.getDate() + count);
 
-
+  const changeRange = (event) => {
+    setStep(event.target.value);
+  };
 
   return (
     <div>
       <div>
-        <button onClick={() => setStep((s) => s - 1)}>-</button>
+        <input
+          type="range"
+          onChange={changeRange}
+          min={1}
+          max={10}
+          vlaue={step}
+        />
+        {step}
+        {/* <button onClick={() => setStep((s) => s - 1)}>-</button>
         Step : {step}
-        <button onClick={() => setStep((s) => s + 1)}>+</button>
+        <button onClick={() => setStep((s) => s + 1)}>+</button> */}
       </div>
 
       <div>
         <button onClick={() => setCount((c) => c - step)}>-</button>
-        Count : {count}
+        <input type="number" value={count} />
         <button onClick={() => setCount((c) => c + step)}>+</button>
       </div>
 
