@@ -11,7 +11,10 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/14addff4-0fec-4f93-9e8d-bc3196557ab0)
 
 
-3. 
+3. Initial Travel 
+
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/9605b8d6-4ef2-449f-99bf-0f74ce1b44ae)
+
 4. 
 5. 
 6. 
