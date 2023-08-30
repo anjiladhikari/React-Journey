@@ -20,5 +20,9 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/0e1283f7-4379-4f38-b571-def50e6c6be0)
 
 
-5. 
+5. Date Counter 
+
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/6af13a78-7063-4f1a-914b-9ce972f3c1f1)
+
+
 6. 
