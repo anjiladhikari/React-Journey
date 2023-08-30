@@ -23,6 +23,10 @@
 5. Date Counter 
 
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/6af13a78-7063-4f1a-914b-9ce972f3c1f1)
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/31d8e1b6-684f-4149-8a6f-591a8ecd8090)
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/4ab9d84c-8e71-40f1-88e0-efba3ec46441)
+
+
 
 
 6. 
