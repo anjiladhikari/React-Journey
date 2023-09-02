@@ -21,9 +21,12 @@ function App() {
   }
 
   function handleReset() {
-    alert("Do you want to clear list??");
+   
+   const confirmed = window.confirm("Do you want to clear list??")
+   
 
-    setItems([]);
+
+   if(confirmed) setItems([]);
   }
 
   return (
