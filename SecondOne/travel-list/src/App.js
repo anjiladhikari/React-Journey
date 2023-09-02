@@ -49,7 +49,7 @@ function Form({ onAddItems }) {
 
     // object
     const newItem = { description, num, packed: false, id: Date.now() };
-    console.log(newItem);
+
     onAddItems(newItem);
 
     setDescription("");
@@ -78,12 +78,20 @@ function Form({ onAddItems }) {
   );
 }
 function PackingList({ items, onDeleteItems, onToggleItems }) {
+
   const [sortBy, setSortBy] = useState("input");
+  let sortedItems;
+  if (sortBy=== "input") sortedItems=items;
+
+  if (sortBy=== "description") {sortedItems=items.slice().sort((a,b)=>a.description.localeCompare(b.description))}   ;
+
+  if (sortBy==="packed"){sortedItems=items.slice().sort((a,b)=>Number(a.packed)- Number(b.packed))};
+
 
   return (
     <div className="list">
       <ul>
-        {items.map((item) => (
+        {sortedItems.map((item) => (
           <Item
             item={item}
             onDeleteItems={onDeleteItems}
