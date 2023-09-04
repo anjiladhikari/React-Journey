@@ -15,6 +15,8 @@ const faqs = [
     title: "Do you ship to countries outside the EU?",
     text: "Excepturi velit laborum, perspiciatis nemo perferendis reiciendis aliquam possimus dolor sed! Dolore laborum ducimus veritatis facere molestias!",
   },
+
+
 ];
 
 function App() {
@@ -39,8 +41,12 @@ function AccordionItem({ num, title, text }) {
   }
 
   return (
-    <div className="item" onClick={handleToggle}>
-      <p className="number">{num}</p>
+    <div className={`item ${isOpen?"open":""}`} onClick={handleToggle}>
+
+      <p className="number">{num<9?`0${num+1}`:
+      
+      
+      num+1}</p>
       <p className="title">{title}</p>
       <p className="icon">{isOpen ? "-":"+"}</p>
 
