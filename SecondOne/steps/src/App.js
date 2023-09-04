@@ -11,16 +11,16 @@ function App() {
   const [isOpen, setIsOpen] = useState(true);
 
   function handlePrevious() {
-    if (step > 1) setStep((s)=>s-1);
+    if (step > 1) setStep((s) => s - 1);
   }
 
   function handleNext() {
-    if (step < 3) setStep((s)=>s+1);
+    if (step < 3) setStep((s) => s + 1);
   }
 
   return (
-    <>
-      <button className="close" onClick={() => setIsOpen((is)=>!is)}>
+    <div>
+      <button className="close" onClick={() => setIsOpen((is) => !is)}>
         &times;
       </button>
 
@@ -37,22 +37,36 @@ function App() {
           </p>
 
           <div className="buttons">
-            <button
-              style={{ backgroundColor: "#7950f2", color: "#fff" }}
+            <Button
+              textColor="#fff"
+              bgColor="#7950f2"
               onClick={handlePrevious}
-            >
-              Previous
-            </button>
-            <button
-              style={{ backgroundColor: "#7950f2", color: "#fff" }}
+              text="Previous"
+              emoji="👈"
+            />
+
+            <Button
+              textColor="#fff"
+              bgColor="#7950f2"
               onClick={handleNext}
-            >
-              Next
-            </button>
+              text="Next"
+              emoji="👉"
+            />
           </div>
         </div>
       )}
-    </>
+    </div>
+  );
+}
+
+function Button({ textColor, bgColor, onClick, text,emoji }) {
+  return (
+    <button
+      style={{ backgroundColor: bgColor, color: textColor }}
+      onClick={onClick}
+    >
+     <span>{text==="Next"?{text ,emoji} :emoji}</span> {text}
+    </button>
   );
 }
 
