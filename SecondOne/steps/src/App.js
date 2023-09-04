@@ -37,21 +37,13 @@ function App() {
           </p>
 
           <div className="buttons">
-            <Button
-              textColor="#fff"
-              bgColor="#7950f2"
-              onClick={handlePrevious}
-              text="Previous"
-              emoji="👈"
-            />
+            <Button textColor="#fff" bgColor="#7950f2" onClick={handlePrevious}>
+              <span>👈</span> Previous
+            </Button>
 
-            <Button
-              textColor="#fff"
-              bgColor="#7950f2"
-              onClick={handleNext}
-              text="Next"
-              emoji="👉"
-            />
+            <Button textColor="#fff" bgColor="#7950f2" onClick={handleNext}>
+              Next <span>👉</span>
+            </Button>
           </div>
         </div>
       )}
@@ -59,13 +51,13 @@ function App() {
   );
 }
 
-function Button({ textColor, bgColor, onClick, text,emoji }) {
+function Button({ textColor, bgColor, onClick, children }) {
   return (
     <button
       style={{ backgroundColor: bgColor, color: textColor }}
       onClick={onClick}
     >
-     <span>{text==="Next"?{text ,emoji} :emoji}</span> {text}
+      {children}
     </button>
   );
 }
