@@ -2,13 +2,17 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Bill />
 
       <Mysat />
 
       <Friendsat />
-    </>
+
+
+
+
+    </div>
   );
 }
 
