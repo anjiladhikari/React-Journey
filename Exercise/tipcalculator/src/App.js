@@ -24,8 +24,12 @@ function TipCalculator() {
   return (
     <div>
       <BillInput bill={bill} onSetBill={setBill} />
-      <SelectPercentage ></SelectPercentage>
-      <SelectPercentage></SelectPercentage>
+      <SelectPercentage percentage={percentage1} onSelect={setPercentage1}>
+        How did you like the service ?
+      </SelectPercentage>
+      <SelectPercentage percentage={percentage2} onSelect={setPercentage2}>
+        How did your friend like the service?
+      </SelectPercentage>
     </div>
   );
 }
@@ -33,16 +37,16 @@ function TipCalculator() {
 function BillInput({ bill, onSetBill }) {
   return (
     <div>
-      <h2>How much was the bill ? </h2>
+      <lable>How much was the bill ? </lable>
       <input type="number" placeholder="Bill value" />
     </div>
   );
 }
 
-function SelectPercentage({ myTips, handleMyTips }) {
+function SelectPercentage({ percentage, onSelect, children }) {
   return (
     <>
-      <h2>How did you like the service ?</h2>
+    <label>{children}</label>
       <select>
         <option value="0">Dissatisfied (0%)</option>
         <option value="5">It was okay (5%)</option>
