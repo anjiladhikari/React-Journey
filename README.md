@@ -13,7 +13,7 @@
 
 3. Initial Travel 
 
-![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/9605b8d6-4ef2-449f-99bf-0f74ce1b44ae)
+
 
 4. Flash Card
 
