@@ -31,7 +31,19 @@ function TipCalculator() {
         How did your friend like the service?
       </SelectPercentage>
 
-      <Output bill={bill} tip={tip} />
+      {bill > 0 && (
+        <>
+
+          <Output bill={bill} tip={tip} />
+
+
+          <Reset onReset={handleReset} />
+        </>
+      )
+
+
+      }
+
     </div>
   );
 }
@@ -68,9 +80,13 @@ function SelectPercentage({ percentage, onSelect, children }) {
 }
 
 function Output({ bill, tip }) {
-  return <h3>You pay ${bill + tip}  (${bill }+ ${tip} tip)</h3>;
+  return <h3>You pay ${bill + tip}  (${bill}+ ${tip} tip)</h3>;
 }
 
+function Reset({ onReset }) {
 
+  return (<button onClick={onReset}>Reset</button>
+  )
+}
 
 export default App;
