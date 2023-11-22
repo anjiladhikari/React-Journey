@@ -29,7 +29,7 @@ export default function App() {
 
   const [friends, setFriends] = useState(initialFriends)
   const [showAddFriend, setShowAddFriend] = useState(false)
-  const [selectedFriend, setSelectedfriend] = useState(null)
+  const [selectedFriend, setSelectedFriend] = useState(null)
 
 
   function handleShowAddFriend() {
@@ -47,11 +47,16 @@ export default function App() {
   }
 
 
+  function handleSelection(friend){
+    setSelectedFriend(friend)
+  }
+
+
   return (
     <div className="app">
 
       <div className="sidebar">
-        <FriendsList friends={friends} />
+        <FriendsList friends={friends}  onSelection={handleSelection}/>
 
         {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
 
@@ -69,14 +74,14 @@ export default function App() {
   )
 }
 
-function FriendsList({ friends }) {
+function FriendsList({ friends,onSelection }) {
 
   return (
 
     <ul>
       {friends.map((friend) => (
 
-        <Friend friend={friend} key={friend.id} />
+        <Friend friend={friend} key={friend.id}  onSelection={onSelection} />
 
       ))}
     </ul>
@@ -86,7 +91,7 @@ function FriendsList({ friends }) {
 
 }
 
-function Friend({ friend }) {
+function Friend({ friend,onSelection }) {
 
   return (
 
@@ -113,7 +118,7 @@ function Friend({ friend }) {
         </p>)
       }
 
-      <Button> Select </Button>
+      <Button onClick={()=>onSelection(friend) }> Select </Button>
     </li>
   )
 }
