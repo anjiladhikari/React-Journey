@@ -27,6 +27,8 @@ function Button({ children, onClick }) {
 
 export default function App() {
 
+  const [friends, setFriends] = useState(initialFriends)
+
   const [showAddFriend, setShowAddFriend] = useState(false)
 
   function handleShowAddFriend() {
@@ -34,13 +36,22 @@ export default function App() {
     return (
       setShowAddFriend((show) => !show))
   }
+
+
+  function handleAddFriend(friend) {
+
+    return setFriends((friends) => [...friends, friend])
+
+  }
+
+
   return (
     <div className="app">
 
       <div className="sidebar">
-        <FriendsList />
+        <FriendsList friends={friends} />
 
-        {showAddFriend && <FormAddFriend />}
+        {showAddFriend && <FormAddFriend onAddFriend={handleAddFriend} />}
 
         <Button onClick={handleShowAddFriend}> {showAddFriend ? 'Close' : 'Add Friend'}</Button>
 
@@ -56,20 +67,16 @@ export default function App() {
   )
 }
 
-function FriendsList() {
-
-  const friends = initialFriends
+function FriendsList({ friends }) {
 
   return (
 
     <ul>
-
       {friends.map((friend) => (
 
-        <Friend friend={friend} key={friend.id} />
+        <Friend friend={friend}  key={friend.id}/>
 
       ))}
-
     </ul>
 
   )
@@ -100,7 +107,7 @@ function Friend({ friend }) {
       }
       {friend.balance === 0 &&
         (<p >
-          You and  {friend.name} are equal
+          You and  {friend.name} are even
         </p>)
       }
 
@@ -111,11 +118,11 @@ function Friend({ friend }) {
 
 
 
-function FormAddFriend() {
+function FormAddFriend({ onAddFriend }) {
 
 
   const [name, setName] = useState("")
-  const [image, setImage] = useState("https://i.pravatar.cc/48?u=933372")
+  const [image, setImage] = useState("https://i.pravatar.cc/48")
 
 
 
@@ -124,22 +131,21 @@ function FormAddFriend() {
 
     if (!name || !image) return;
 
-  const  id= crypto.randomUUID();
+    const id = crypto.randomUUID();
 
 
     const newFriend = {
       id,
       name,
-     
+
       // image fixing method
-      image : `${image}?=${id}`, 
+      image: `${image}?=${id}`,
       balance: 0,
 
     };
 
-    console.log(newFriend)
-
-    setName('')
+    onAddFriend(newFriend)
+    setName("")
     setImage("https://i.pravatar.cc/48?u=933372")
   }
 
