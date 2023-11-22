@@ -29,17 +29,19 @@ export default function App() {
 
   const [friends, setFriends] = useState(initialFriends)
   const [showAddFriend, setShowAddFriend] = useState(false)
+  const [selectedFriend, setSelectedfriend] = useState(null)
+
 
   function handleShowAddFriend() {
 
-     (
+    (
       setShowAddFriend((show) => !show))
   }
 
 
   function handleAddFriend(friend) {
 
-     setFriends((friends) => [...friends, friend]);
+    setFriends((friends) => [...friends, friend]);
 
     setShowAddFriend(false)
   }
@@ -59,8 +61,8 @@ export default function App() {
 
 
 
-      <FormSplitBill />
-
+     {selectedFriend && <FormSplitBill />
+}
 
     </div>
 
@@ -74,7 +76,7 @@ function FriendsList({ friends }) {
     <ul>
       {friends.map((friend) => (
 
-        <Friend friend={friend}  key={friend.id}/>
+        <Friend friend={friend} key={friend.id} />
 
       ))}
     </ul>
