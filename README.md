@@ -1,4 +1,4 @@
-# React-Journey
+# React-Journey.
 
 ## The list of projects are given below
 
