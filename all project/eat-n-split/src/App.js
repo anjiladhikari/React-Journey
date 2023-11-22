@@ -122,11 +122,25 @@ function FormAddFriend() {
   function handleSubmit(e) {
     e.preventDefault();
 
-const newFriend={
-  name,
-  
-}
+    if (!name || !image) return;
 
+  const  id= crypto.randomUUID();
+
+
+    const newFriend = {
+      id,
+      name,
+     
+      // image fixing method
+      image : `${image}?=${id}`, 
+      balance: 0,
+
+    };
+
+    console.log(newFriend)
+
+    setName('')
+    setImage("https://i.pravatar.cc/48?u=933372")
   }
 
 
