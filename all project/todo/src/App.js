@@ -5,11 +5,11 @@ export default function App() {
   return (
     <div className="App">
 
-      <h1>REACT TODO APP</h1>
+      <h1>React Todo APP</h1>
 
-      <form>
+      <form className='input-wrapper'>
         <input type='text' name='todo' placeholder='Create a new todo' />
-        <button>Add</button>
+        <button className='add-button'>Add</button>
 
       </form>
 
