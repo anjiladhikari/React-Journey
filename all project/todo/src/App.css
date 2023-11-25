@@ -15,7 +15,7 @@ body {
 
 .App {
   padding: 1rem;
-  max-width: 50%;
+  max-width: 80%;
   margin: 0 auto;
   text-align: center;
   background: #333;
@@ -31,7 +31,7 @@ h1 {
 }
 
 .input-wrapper {
-  margin: 3.5rem;
+  margin: 2.5rem;
 }
 
 .todos-wrapper {

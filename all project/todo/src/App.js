@@ -1,6 +1,9 @@
 
 import { useState } from 'react';
 import './App.css';
+import TodoInput from './TodoInput';
+import TodoList from './TodoList';
+
 
 export default function App() {
 
@@ -30,55 +33,20 @@ export default function App() {
 
   return (
 
-    <div className="App">
 
+    <div className='App'>
       <h1>React Todo APP</h1>
 
-      <form className='input-wrapper'>
-        <input
-          type='text'
-          name='todo'
-          value={todo}
-          placeholder='Create a new todo'
-          onChange={(e) => { setTodo(e.target.value) }}
-        />
-        <button className='add-button' onClick={HandleAddTodo}>Add</button>
+      <TodoInput
+        todo={todo}
+        HandleAddTodo={HandleAddTodo}
+        setTodo={setTodo}
+      />
 
-      </form>
-
-
-
-      {todos?.length > 0 ? (
-
-        <ul className='todo-list'>
-          {todos.map((todo, index) => (
-
-            <div className='todo'>
-              <li key={index} > {todo}  </li>
-              <button
-                className='delete-button'
-                onClick={() => HandleDeleteTodo(todo)}
-              >
-                Delete
-              </button>
-            </div>
-
-          ))}
-        </ul>
-      ) : (
-        <div className="empty">
-          <p>No task found</p>
-        </div>
-        
-      )}
-
-
-
-
-
-
-
-
+      <TodoList
+        todos={todos}
+        HandleDeleteTodo={HandleDeleteTodo}
+      />
 
     </div >
   );
