@@ -1,20 +1,63 @@
 
+import { useState } from 'react';
 import './App.css';
 
 export default function App() {
+
+  const [todos, setTodos] = useState([])
+  const [todo, setTodo] = useState("")
+
+  const HandleAddTodo = (e) => {
+
+    e.preventDefault();
+
+    if (todo !== "") {
+      setTodos([...todos, todo])
+      setTodo("");
+    }
+
+  }
+
+
   return (
+
     <div className="App">
 
       <h1>React Todo APP</h1>
 
       <form className='input-wrapper'>
-        <input type='text' name='todo' placeholder='Create a new todo' />
-        <button className='add-button'>Add</button>
+        <input
+          type='text'
+          name='todo'
+          value={todo}
+          placeholder='Create a new todo'
+          onChange={(e) => { setTodo(e.target.value) }}
+        />
+        <button className='add-button' onClick={HandleAddTodo}>Add</button>
 
       </form>
+
+
+      <ul className='todo-list'>
+        {todos.map((todo, index) => (
+
+          <div className='todo'>
+            <li key={index} > {todo}  </li>
+
+
+          </div>
+
+        ))}
+
+
+
+      </ul>
+
 
     </div>
   );
 }
+
+
 
 
