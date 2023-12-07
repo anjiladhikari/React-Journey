@@ -1,4 +1,6 @@
-import "./styles.css";
+import "./App.css";
+import { useState } from "react";
+
 
 export default function App() {
   return (
@@ -34,6 +36,29 @@ export default function App() {
   );
 }
 
-function TextExpander() {
-  return <div>TODO</div>;
+function TextExpander(
+  collapsedNumWords,
+  expandButtonText,
+  collapseButtonText,
+  buttonColor,
+  expanded,
+  children
+) {
+  const [isExpanded, setIsExpanded] = useState(expanded);
+
+  const displayText =isExpanded ? children:children
+
+
+
+
+  return (
+
+
+    <div>
+
+
+      <span>{displayText}</span>
+
+    </div>
+  )
 }
