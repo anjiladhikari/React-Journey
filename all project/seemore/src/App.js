@@ -65,7 +65,7 @@ function TextExpander(
   return (
 
 
-    <div>
+    <div className={className}>
 
 
       <span>{displayText}</span>
