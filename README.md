@@ -2,6 +2,13 @@
 
 ## The list of projects are given below
 
+
+* [Demo of the Project](https://youtu.be/SuQlZzPlXiE)
+
+[![Alt text](https://img.youtube.com/vi/SuQlZzPlXiE/0.jpg)](https://youtu.be/SuQlZzPlXiE)
+
+
+
 1. Pizza Meanu Project  
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/1e37f3f9-c9fa-459c-a480-a109f90d9e4d)
 
