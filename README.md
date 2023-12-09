@@ -27,10 +27,11 @@
 
 
 
-*  Setps 
+* [Demo of Steps](https://www.youtube.com/watch?v=qJiUO7L17og)
 
-![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/59c0de1e-9a9c-4482-811c-f5e12defb4a3)
-![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/14addff4-0fec-4f93-9e8d-bc3196557ab0)
+
+[![Steps](https://img.youtube.com/vi/qJiUO7L17og/0.jpg)](https://www.youtube.com/watch?v=qJiUO7L17og)
+
 
 
 *  Initial Travel 
