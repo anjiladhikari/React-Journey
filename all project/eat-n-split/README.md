@@ -1,6 +1,3 @@
-[Watch the video on YouTube](https://youtu.be/SuQlZzPlXiE)
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SuQlZzPlXiE" frameborder="0" allowfullscreen></iframe>
+[Demo of the Project](https://youtu.be/SuQlZzPlXiE)
 
 [![Alt text](https://img.youtube.com/vi/SuQlZzPlXiE/0.jpg)](https://youtu.be/SuQlZzPlXiE)
