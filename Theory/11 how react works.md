@@ -1,5 +1,5 @@
 # Component vs Instance vs Element 
-
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/59884dfb-f62f-490c-a6ce-53a6aecdbc26)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/ff485703-7732-4979-9ca8-d4b0bb85cdbe)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/0769cc96-810a-4b76-8993-3e77c87378fc)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/bb30b0bf-b7d8-4d9d-a6c5-8fbcfbf97216)
