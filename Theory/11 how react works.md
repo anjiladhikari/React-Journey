@@ -21,6 +21,7 @@
 ## commit phase
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/26b800a3-8e00-4ec4-9e1a-d341d89e5267)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/dbe33a56-2daf-4e20-b126-00e3e9fc0d71)
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/dacc6164-389e-45b9-a7f1-f0a8041ff931)
 
 
 
