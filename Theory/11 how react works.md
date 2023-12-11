@@ -23,6 +23,7 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/dbe33a56-2daf-4e20-b126-00e3e9fc0d71)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/dacc6164-389e-45b9-a7f1-f0a8041ff931)
 ## diffing 
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/67274540-4d2a-4761-9136-153b49221f86)
 
 
 
