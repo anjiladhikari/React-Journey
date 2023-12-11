@@ -10,6 +10,7 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/e52a3eeb-5432-438d-8f8e-ee76ae9abef3)
 ## Render phase
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/325b354b-1dea-41c1-a59b-229bc7fbd463)
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/c408c529-a087-4a0f-a75e-9c6eb886c6be)
  
 
 
