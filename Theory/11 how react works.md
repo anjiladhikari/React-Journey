@@ -24,6 +24,7 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/dacc6164-389e-45b9-a7f1-f0a8041ff931)
 ## diffing 
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/67274540-4d2a-4761-9136-153b49221f86)
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/a1d53746-c030-4432-b204-24ce2af196b2)
 
 
 
