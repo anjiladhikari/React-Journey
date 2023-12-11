@@ -4,3 +4,5 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/0769cc96-810a-4b76-8993-3e77c87378fc)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/bb30b0bf-b7d8-4d9d-a6c5-8fbcfbf97216)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/1d6847b9-c7ab-40d0-a8cc-a74abce3ebb1)
+
+# How rendering works
