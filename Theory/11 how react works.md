@@ -8,5 +8,7 @@
 # How rendering works
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/ff917dc7-6c54-488b-93ef-11b8c4e72936)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/e52a3eeb-5432-438d-8f8e-ee76ae9abef3)
+## Render phase
+
 
 
