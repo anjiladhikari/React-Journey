@@ -36,6 +36,7 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/c197e550-04fe-4fe2-b6da-9ea20c8cdbfc)
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/41f5034e-2f6a-4806-a7e6-edc12f76d053)
 
+## state update batching
 
 
 
