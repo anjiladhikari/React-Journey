@@ -30,6 +30,7 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/52a41954-284f-4b81-8020-0965b3ed340e)
 
 ## render logic pure components
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/44cedb0b-8d79-45e1-bfd6-d7446fe115b8)
 
 
 
