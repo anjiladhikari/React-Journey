@@ -44,6 +44,7 @@
 
 
 ## How event works
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/c662eb0d-bb5d-433d-80d2-d9d8dea47c8e)
 
 
 
