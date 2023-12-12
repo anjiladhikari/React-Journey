@@ -45,6 +45,7 @@
 
 ## How event works
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/c662eb0d-bb5d-433d-80d2-d9d8dea47c8e)
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/36241ec7-8ff6-4dc2-8dc0-35f0b32cd5e9)
 
 
 
