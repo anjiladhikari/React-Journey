@@ -1,4 +1,5 @@
 ## Summary
+![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/a3b629ec-db62-4de0-9c68-1408605e19ad)
 
 
 # Component vs Instance vs Element 
