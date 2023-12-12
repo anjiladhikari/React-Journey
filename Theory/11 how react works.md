@@ -43,6 +43,7 @@
 ![image](https://github.com/anjiladhikari/React-Journey/assets/21165474/9ff43ed9-97cc-46f1-8e36-d97fa4ea98a9)
 
 
+## How event works
 
 
 
