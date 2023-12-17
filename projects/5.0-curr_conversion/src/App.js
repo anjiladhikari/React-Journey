@@ -20,7 +20,7 @@ export default function App() {
     }
 
     convert();
-  }, [])
+  }, [amount,fromCur, toCur])
 
 
   return (
