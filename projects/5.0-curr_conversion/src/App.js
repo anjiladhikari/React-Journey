@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-// `https://api.frankfurter.app/latest?amount=100&from=EUR&to=USD`
 
 export default function App() {
 
@@ -10,7 +9,23 @@ export default function App() {
   const [fromCur, setFromCur] = useState("EUR");
   const [toCur, setToCur] = useState("USD");
 
+  useEffect(function () {
+    async function convert() {
+      const res = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${fromCur}&to=${toCur}`);
+    
 
+      const data = await res.json();
+      console.log(data.rates[toCur])
+     
+
+    
+    
+    
+    
+    }
+
+    convert();
+  }, [])
 
 
   return (
