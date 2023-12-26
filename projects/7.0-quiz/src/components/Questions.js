@@ -1,6 +1,6 @@
 import Options from "./Options"
 
-export const Questions = ({ question }) => {
+export const Questions = ({ question,dispatch,answer }) => {
   return (
 
 
@@ -9,7 +9,7 @@ export const Questions = ({ question }) => {
 
       <h4>{question.question} </h4>
 
-      <Options question={question} />
+      <Options question={question} dispatch={dispatch} answer={answer} />
 
     </div>
 
