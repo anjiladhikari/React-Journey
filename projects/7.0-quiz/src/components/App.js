@@ -6,6 +6,7 @@ import Loader from './Loader'
 import { useEffect, useReducer } from 'react';
 import StartScreen from '../StartScreen';
 import { Questions } from './Questions';
+import NextButton from './NextButton';
 
 
 
@@ -49,6 +50,14 @@ function reducer(state, action) {
           action.payload === question.correctOption ? state.points + question.points : state.points,
       }
 
+    case "nextQuestion":
+      return {
+        ...state,
+        index: state.index + 1,
+        answer:null
+      }
+
+
     default:
       throw new Error("Action unknown")
 
@@ -86,11 +95,18 @@ function App() {
         {status === "error" && <Error />}
         {status === "ready" && <StartScreen numQuestions={numQuestions} dispatch={dispatch} />}
         {status === "active" &&
-          (<Questions
-            question={questions[index]}
-            dispatch={dispatch}
-            answer={answer}
-          />
+          (
+            <>
+
+              <Questions
+                question={questions[index]}
+                dispatch={dispatch}
+                answer={answer}
+              />
+
+              <NextButton dispatch={dispatch} answer={answer}/>
+
+            </>
           )}
 
       </Main>
