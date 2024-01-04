@@ -1,6 +1,6 @@
 import Options from "./Options"
 
-export const Questions = ({ question,dispatch,answer }) => {
+export const Question = ({ question,dispatch,answer }) => {
   return (
 
 
